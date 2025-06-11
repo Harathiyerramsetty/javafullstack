@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>CALCULATOR</title>
+    <style>
+    p{
+      text-align:center;
+    }
+    p{
+    text-align:center;
+    }
+
+    </style>
+    <script>
+      function add()
+      {
+        a=Number(document.getElementById("v1").value);
+        b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a+b;
+
+      }
+      function mul()
+      {
+        a=Number(document.getElementById("v1").value);
+        b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a*b;
+
+      }
+      function sub()
+      {
+        a=Number(document.getElementById("v1").value);
+        b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a-b;
+
+      }
+      function div()
+      {
+        a=Number(document.getElementById("v1").value);
+        b=Number(document.getElementById("v2").value);
+        document.getElementById("h1").innerHTML=a/b;
+
+      }
+      </script>
+</head>
+<body>
+  <p>
+  <input type="text" id="v1" placeholder="enter a number">
+  
+    <input type="text" id="v2" placeholder="enter a number"> <br><br>
+ </p>
+ <center>
+ <button  onclick="add()"type="button" class="btn btn-primary">ADD</button>
+ <button  onclick="sub()"type="button" class="btn btn-info">SUB</button>
+ <button  onclick="mul()"type="button" class="btn btn-success">mul</button>
+ <button  onclick="div()"type="button" class="btn btn-danger">div</button>
+ </center>
+ <h1 id="h1" align="center"></h1>
+</body>
+</html>
